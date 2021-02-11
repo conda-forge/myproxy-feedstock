@@ -18,6 +18,6 @@ sed -i "s@/usr/bin/perl@${BUILD_PREFIX}/bin/perl@g" myproxy-test
 sed -i 's@/bin/kill@kill@g' myproxy-test
 
 # The tests assume this current directory is on PATH
-PATH=$PWD:$PATH make check
+PATH=$PWD:$PATH make check || cat ./test-suite.log
 
 make install
