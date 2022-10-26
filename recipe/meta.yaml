@@ -30,7 +30,7 @@ requirements:
     - voms
   run:
     # Hasn't been updated in years so pin tightly
-    - {{ pin_compatible('voms', max_pin='x.x.x.x.x.x.x.x') }}
+    - {{ pin_compatible('voms', exact=True) }}
 
 test:
   commands:
