@@ -1,5 +1,5 @@
 {% set name = "myproxy" %}
-{% set version = "6.2.14" %}
+{% set version = "6.2.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: http://deb.debian.org/debian/pool/main/m/myproxy/myproxy_{{ version }}.orig.tar.gz
-  sha256: e61f90e4c6d30b5a0012b1e8aeaa540da70f96373435283aeb097aaebce18df2
+  sha256: 4d07fbc2cd06325635cda54c70b93677d8e66ef06e6b01d2e29aac18e1d687fc
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win or osx]
 
 requirements:
@@ -45,16 +45,16 @@ test:
     - myproxy-store --help
 
 about:
-  home:  http://grid.ncsa.illinois.edu/myproxy/
+  home: http://grid.ncsa.illinois.edu/myproxy/
   license: BSD-3-Clause
   license_file: LICENSE
   summary: Credential Management Service
   description: |
-     MyProxy is open source software for managing X.509 Public Key
-     Infrastructure (PKI) security credentials (certificates and private keys).
-     MyProxy combines an online credential repository with an online
-     certificate authority to allow users to securely obtain credentials when
-     and where needed.
+    MyProxy is open source software for managing X.509 Public Key
+    Infrastructure (PKI) security credentials (certificates and private keys).
+    MyProxy combines an online credential repository with an online
+    certificate authority to allow users to securely obtain credentials when
+    and where needed.
   doc_url: http://grid.ncsa.illinois.edu/myproxy/doc.html
   dev_url: https://github.com/globus/globus-toolkit/
 
