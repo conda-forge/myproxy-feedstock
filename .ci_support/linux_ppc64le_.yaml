@@ -11,7 +11,7 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-ppc64le
 gct:
-- 6.2.1629922860
+- 6.2.1705709074
 krb5:
 - '1.21'
 openssl:
