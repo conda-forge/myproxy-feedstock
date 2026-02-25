@@ -10,12 +10,13 @@ source:
   sha256: 4d07fbc2cd06325635cda54c70b93677d8e66ef06e6b01d2e29aac18e1d687fc
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win or osx]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
     # Used by "make check"
     - sed
