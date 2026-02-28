@@ -26,7 +26,6 @@ requirements:
     - cyrus-sasl
     - gct
     - krb5
-    - libnsl
     - openldap
     - openssl
     - voms
