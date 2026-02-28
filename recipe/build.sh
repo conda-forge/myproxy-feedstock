@@ -2,8 +2,6 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-export CFLAGS="${CFLAGS} -Wno-implicit-function-declaration"
-
 ./configure \
     "--prefix=${PREFIX}" \
     --disable-static \
