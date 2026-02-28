@@ -2,6 +2,8 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+export GLOBUS_LOCATION=${PREFIX}
+
 ./configure \
     "--prefix=${PREFIX}" \
     --disable-static \
