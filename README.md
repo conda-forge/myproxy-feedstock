@@ -19,7 +19,6 @@ MyProxy combines an online credential repository with an online
 certificate authority to allow users to securely obtain credentials when
 and where needed.
 
-
 Current build status
 ====================
 
