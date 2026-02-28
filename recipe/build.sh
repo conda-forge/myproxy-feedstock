@@ -9,7 +9,7 @@ IFS=$'\n\t'
     "--with-kerberos5=${PREFIX}" \
     "--with-openldap=${PREFIX}" \
     "--with-voms=${PREFIX}" \
-    LIBS='-ldl'
+    LIBS='-ldl' || cat config.log
 
 make "-j${CPU_COUNT}"
 
